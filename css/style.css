@@ -18,6 +18,9 @@
   /* DARK SHADES */
   --dark06-color: #0f0f0f;
   --dark10-color: #1a1a1a;
+
+  /* GREY SHADES */
+  --grey70-color: #B3B3B2;
 }
 
 body {
@@ -107,4 +110,51 @@ body {
     width: 100%;
     margin-bottom: 20px;
   }
+}
+
+.motivation-section {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: solid 5px var(--dark10-color);
+  border-radius: 20px;
+  margin-top: 100px;
+  padding: 1.2rem;
+}
+
+.motivation-header {
+  background: var(--dark10-color);
+  border-radius: 10px;
+  padding: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.motivation-description {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.motivation-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  background: var(--dark10-color);
+  border-radius: 10px;
+  padding: 1.2rem;
+}
+
+.btn-icon {
+  transform: rotate(45deg);
+}
+
+.motivation-cards p {
+  color: var(--grey70-color);
+}
+
+.motivation-cards a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
 }
